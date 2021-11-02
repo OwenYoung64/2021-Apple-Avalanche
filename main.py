@@ -35,6 +35,7 @@ def draw_letter(letter, active_apple):
   active_apple.write(letter, font=("Arial", 50, "bold"))
   active_apple.setpos(remember_pos)
 
+
 #-----function calls-----
 draw_apple(apple)
 wn.onkeypress(drop_apple, "a")
