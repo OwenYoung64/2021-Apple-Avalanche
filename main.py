@@ -26,6 +26,8 @@ def drop_apple():
   wn.tracer(True)
   apple.penup()
   apple.goto(apple.xcor(), -160)
+  apple.hideturtle()
+  apple.clear()
   wn.tracer(False)
 
 def draw_letter(letter, active_apple):
@@ -34,7 +36,6 @@ def draw_letter(letter, active_apple):
   active_apple.setpos(active_apple.xcor() + xoffset, active_apple.ycor() + yoffset)
   active_apple.write(letter, font=("Arial", 50, "bold"))
   active_apple.setpos(remember_pos)
-
 
 #-----function calls-----
 draw_apple(apple)
