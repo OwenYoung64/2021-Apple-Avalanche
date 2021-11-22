@@ -28,7 +28,6 @@ def reset_apple(active_apple):
     current_letter = letter_list.pop(index)
     draw_apple(active_apple, current_letter)
 
-
 def draw_apple(active_apple, letter):
   active_apple.penup()
   active_apple.shape(apple_image)
